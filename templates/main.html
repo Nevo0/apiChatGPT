@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content%}
+<h3>your </h3>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="input_value" id="input_value">
+    <button type="submit">Submit</button>
+</form>
+
+{% if respons %}
+<div class="respon">
+    {{respons|safe}}
+</div>
+{% endif %}
+
+{% endblock content%}
