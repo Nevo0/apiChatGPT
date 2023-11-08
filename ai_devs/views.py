@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 def index(request):
-    response = requests.get("https://g-w.eu")
+    response = requests.get("https://gw.eu")
     # print(response.json())
     if response.status_code == 200:
         print(response.text)

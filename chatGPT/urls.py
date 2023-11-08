@@ -19,6 +19,7 @@ from django.urls import path,include
 
 urlpatterns = [
     path("", include("open_ai_chat.urls")),
+    path("ai-devs", include("ai_devs.urls")),
     path("scrap", include("scrap.urls")),
     path("tts", include("tts.urls")),
     path("vision", include("vision.urls")),
